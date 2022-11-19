@@ -1,5 +1,5 @@
 import React from 'react';
-import { art, lifeStyle, literature,history, psychology, socialScience, management, scientific, poetry, freeBook, education, religian, philosophy } from '../../lib/SelectionFilter';
+import { art, lifeStyle, literature,history, psychology, socialScience, management, scientific, poetry, freeBook, education, religian, philosophy } from '../../utils/SelectionFilter';
 import DropDownItem from './DropDownItem';
 import DropDownTitle from './DropDownTitle';
 

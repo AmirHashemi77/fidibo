@@ -1,5 +1,5 @@
 import React from 'react';
-import { businessPodcasts, historyPodcast, moviePodcasts, musicPodcasts, narrativePodcasts, poetryPodcasts, popularPodcasts, psychologyPodcasts, scientificPodcasts } from '../../lib/SelectionFilter';
+import { businessPodcasts, historyPodcast, moviePodcasts, musicPodcasts, narrativePodcasts, poetryPodcasts, popularPodcasts, psychologyPodcasts, scientificPodcasts } from '../../utils/SelectionFilter';
 import DropDownItem from './DropDownItem';
 
 const PodcastDropDown = () => {

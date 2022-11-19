@@ -1,6 +1,6 @@
 import React from 'react';
 import DropDownItem from './DropDownItem';
-import { artMagazine, lifeStyleMagazine, socialMagazine, economyMagazine, cinemaMagazine } from '../../lib/SelectionFilter';
+import { artMagazine, lifeStyleMagazine, socialMagazine, economyMagazine, cinemaMagazine } from '../../utils/SelectionFilter';
 
 const MagazineDropDown = () => {
     return (
