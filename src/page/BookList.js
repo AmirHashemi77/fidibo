@@ -9,7 +9,7 @@ import SideBarItem from '../component/BookList.js/SideBarItem';
 import CarouselItem from '../component/Carousel/CarouselItem';
 import Footer from '../container/Footer';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import { category } from '../lib/category';
+import { category } from '../utils/category';
 import { v4 as uuid } from 'uuid';
 import SidebarCheckbox from '../component/BookList.js/SidebarCheckbox';
 import Header from '../container/Header';

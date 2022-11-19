@@ -4,7 +4,7 @@ import Accordion from './Accordion';
 import AccordionLink from './AccordionLink';
 import { useDispatch, useSelector } from 'react-redux';
 import { uiSliceAction } from '../../store/slice/uiSlice';
-import { art, businessPodcasts, education, freeBook, history, lifeStyle, literature, management, moviePodcasts, musicPodcasts, narrativePodcasts, philosophy, poetry, popularPodcasts, psychology, psychologyPodcasts, religian, scientific, scientificPodcasts, socialScience, poetryPodcasts, historyPodcast, lifeStyleMagazine, artMagazine, socialMagazine, cinemaMagazine,economyMagazine } from '../../lib/SelectionFilter';
+import { art, businessPodcasts, education, freeBook, history, lifeStyle, literature, management, moviePodcasts, musicPodcasts, narrativePodcasts, philosophy, poetry, popularPodcasts, psychology, psychologyPodcasts, religian, scientific, scientificPodcasts, socialScience, poetryPodcasts, historyPodcast, lifeStyleMagazine, artMagazine, socialMagazine, cinemaMagazine,economyMagazine } from '../../utils/SelectionFilter';
 import { v4 as uuid } from 'uuid';
 
 

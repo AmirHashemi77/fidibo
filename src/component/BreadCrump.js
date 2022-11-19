@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { category } from '../lib/category';
+import { category } from '../utils/category';
 const BreadCrump = ({page,pageCategoryId,pageSubCategoryId,bookName}) => {
     const pageCategory=pageCategoryId && category.find((item)=>item.id===pageCategoryId)
     const pageSubCategory=pageSubCategoryId && pageCategory.subset.find((item)=>item.id===pageSubCategoryId)
