@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: iranYekan;
+    src: url("../public/fonts/IRANYekanMediumMsn.ttf") format("truetype");  
+    font-weight: 500;
+  }
+/* @font-face {
+    font-family: iranYekan;
+    src: url("../public/fonts/IRANYekanRegularMsn.ttf") format("truetype");  
+    font-weight: 400;
+  } */
+  @layer base {
+    html {
+      font-family: iranYekan, system-ui;
+      direction:rtl;
+      -webkit-tap-highlight-color: transparent;
+      @apply bg-gray-50
+    }
+  }
+
+
+  .image-slider>.active{
+  display: block;
+  }
+  .image-slider>.next{
+  animation: changeSlide 2s ease;
+  }
+  @keyframes changeSlide {
+    0%{
+      transform: translateX(0%);
+    }
+    100%{
+      transform: translateX(100%);
+    }
+  }
+
+
+  .dots>.active{
+  @apply bg-gray-400
+  }
+
+
+  .swiper-pagination{
+    position: unset!important;
+    margin-top: 40px;
+    
+  }
+  .swiper-slide{
+   height: auto !important;
+   
+  }
+  .swiper{
+    @apply !overflow-visible !overflow-x-hidden
+  }
+  
+  
+  
+  .ltr{
+    direction:ltr;
+   
+  }
+  .activeSort{
+  @apply bg-lightBlue text-white
+  }
+
+  .activeIcon{
+    filter: brightness(0) invert(1);
+
+
+  }
+  .accardion-height{
+    max-height: 3100px;
+  }
+  

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 32 32">
+    <defs>
+        <style>
+            .cls-1{fill:#aaaaad}
+        </style>
+    </defs>
+    <g id="Group_3326" transform="translate(.085)">
+        <g id="Group_3325" transform="translate(-.002 2.102)">
+            <path id="Path_4680" d="M.981 12.675h9.457a.981.981 0 1 0 0-1.961H.981a.981.981 0 0 0 0 1.961z" class="cls-1" transform="translate(0 -2.308)"/>
+            <path id="Path_4681" d="M.981 21.247h9.457a.981.981 0 1 0 0-1.961H.981a.981.981 0 1 0 0 1.961z" class="cls-1" transform="translate(0 -2.474)"/>
+            <path id="Path_4682" d="M20.945 27.857H.981a.981.981 0 0 0 0 1.961h19.964a.981.981 0 0 0 0-1.961z" class="cls-1" transform="translate(0 -2.639)"/>
+            <path id="Path_4683" d="M.981 4.1h19.964a.981.981 0 1 0 0-1.961H.981a.981.981 0 1 0 0 1.961z" class="cls-1" transform="translate(0 -2.143)"/>
+            <path id="Path_4684" d="M31.364 24.62L27 20.26a7.314 7.314 0 1 0-1.387 1.387l4.359 4.36a.981.981 0 0 0 1.387-1.387zM15.89 15.857a5.324 5.324 0 1 1 5.323 5.324 5.33 5.33 0 0 1-5.323-5.324z" class="cls-1" transform="translate(-.269 -2.267)"/>
+        </g>
+        <path id="Rectangle_1504" fill="none" d="M0 0H32V32H0z" transform="translate(-.085)"/>
+    </g>
+</svg>

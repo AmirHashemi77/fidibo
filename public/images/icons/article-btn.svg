@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Group_3262" width="25" height="25" viewBox="0 0 32.049 32.049">
+    <defs>
+        <style>
+            .cls-1{fill:#aaaaad}
+        </style>
+    </defs>
+    <g id="Group_3258" transform="translate(7.001 15.022)">
+        <path id="Path_4624" d="M24.044 17.005H8A1 1 0 0 1 8 15h16.044a1 1 0 1 1 0 2.005z" class="cls-1" transform="translate(-7 -15)"/>
+    </g>
+    <g id="Group_3259" transform="translate(7.001 8.012)">
+        <path id="Path_4625" d="M24.044 10.005H8A1 1 0 0 1 8 8h16.044a1 1 0 1 1 0 2.005z" class="cls-1" transform="translate(-7 -8)"/>
+    </g>
+    <g id="Group_3260" transform="translate(14.014 22.032)">
+        <path id="Path_4626" d="M24.026 24.005H15A1 1 0 1 1 15 22h9.023a1 1 0 1 1 0 2.005z" class="cls-1" transform="translate(-14 -22)"/>
+    </g>
+    <g id="Group_3261">
+        <path id="Path_4627" d="M26.04 32.049H6.009A6.015 6.015 0 0 1 0 26.04V6.009A6.015 6.015 0 0 1 6.009 0H26.04a6.015 6.015 0 0 1 6.009 6.009V26.04a6.015 6.015 0 0 1-6.009 6.009zM6.009 2A4.01 4.01 0 0 0 2 6.009V26.04a4.01 4.01 0 0 0 4.006 4.006H26.04a4.01 4.01 0 0 0 4.006-4.006V6.009A4.01 4.01 0 0 0 26.04 2z" class="cls-1"/>
+    </g>
+</svg>
