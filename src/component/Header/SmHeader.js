@@ -16,7 +16,7 @@ const SmHeader = () => {
              <div className='max-w-5xl mx-auto'>
                  <div className='flex flex-col  space-y-2'>
                      <div className='flex justify-between items-center'>         
-                     <img src="/images/header-logo.svg" alt="" className='px-4 w-32'/>
+                        <Link to='/'><img src="/images/header-logo.svg" alt="" className='px-4 w-32'/></Link>
                          <ul className='flex justify-between items-baseline'>
                              <li className='text-2xl p-3 rounded-lg text-gray-500 hover:bg-gray-300 cursor-pointer'><Link><i className='fa fa-gift'></i></Link></li>
                              <li className='text-xl p-3 rounded-lg text-gray-500 hover:bg-gray-300 cursor-pointer'><Link to='/basket'><i className='fa fa-shopping-basket'></i></Link></li>
