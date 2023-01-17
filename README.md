@@ -1,10 +1,10 @@
 # Clone Of Fedio
 ## Fidibo is an online book store
-### [Clone Of Fidibo](https://fidibo.netlify.app/)
+### [Clone Of Fidibo Link](https://fidibo.netlify.app/)
 
 ---
 
-![Home](https://github.com/AmirHashemi77/fidibo/blob/main/public/readmeImg/Home.png)
+![Home](https://s2.uupload.ir/files/home_sw0g.jpg)
 
 ---
  This project is a clone of the Fidibo website, Fidibo is an online book store, and I tried to implement the front-end part of this website responsively.
@@ -28,7 +28,7 @@
 
  ## Login
  
- ![Login]()
+ ![Login](https://s2.uupload.ir/files/login_xv7g.jpg)
  
 >Because there is no backend, there is no need to sign in, and in the  'Login'  section, you can enter only by pressing login.
 
@@ -39,7 +39,11 @@
 
   You can see a list of different books based on the type of writing, genre and different topics
 
-![BookList]()
+![BookList](https://s2.uupload.ir/files/booklist1_ydr.jpg)
+
+
+
+
 
 
 
@@ -54,19 +58,20 @@
   .
   .
   .
- ![BookDetail]()
+
+ ![BookDetail](https://s2.uupload.ir/files/bookdetail_mtph.jpg)
 
 ## My Library
 
 You can see your purchased books in the library section
 
-![Library]()
+![Library](https://s2.uupload.ir/files/library_ozxu.jpg)
 
 
 ## Download App
 
 In this section, there is a guide for downloading and installing the app
-![app]()
+![app](https://s2.uupload.ir/files/app_xus3.jpg)
 ---
 
 
