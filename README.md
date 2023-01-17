@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Clone Of Fedio
+## Fidibo is an online book store
+### [Clone Of Fidibo](https://fidibo.netlify.app/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+![Home]()
 
-In the project directory, you can run:
+---
+ This project is a clone of the Fidibo website, Fidibo is an online book store, and I tried to implement the front-end part of this website responsively.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ #### This project has been implemented using the following technologies:
+ 
+ - React
+ - React Router
+ - Redux/ReduxTolkit
+ - Tailwind
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+ - View the list of books with different categories
+ - View details of books
+ - Logging in to the site and using a personal library
+ - Add books to cart
+ 
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ ## Login
+ 
+ ![Login]()
+ 
+>Because there is no backend, there is no need to sign in, and in the  'Login'  section, you can enter only by pressing login.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## View BookList
 
-### `npm run eject`
+  You can see a list of different books based on the type of writing, genre and different topics
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![BookList]()
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Book Details
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ Each book has its own page that contains information such as :
+ - Publisher
+ - Pages
+ - Auther
+ - price
+  .
+  .
+  .
+ ![BookDetail]()
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## My Library
 
-### Code Splitting
+You can see your purchased books in the library section
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Library]()
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Download App
 
-### Making a Progressive Web App
+In this section, there is a guide for downloading and installing the app
+![app]()
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+To see the original version of the Fidibo site, refer to the link below:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+[Fidibo](https://fidibo.com/)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
