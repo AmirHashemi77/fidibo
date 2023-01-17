@@ -4,7 +4,7 @@
 
 ---
 
-![Home]()
+![Home](https://github.com/AmirHashemi77/fidibo/blob/main/public/readmeImg/Home.png)
 
 ---
  This project is a clone of the Fidibo website, Fidibo is an online book store, and I tried to implement the front-end part of this website responsively.
