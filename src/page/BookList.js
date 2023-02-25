@@ -8,25 +8,25 @@ import SideBar from '../component/BookList.js/SideBar';
 import SideBarItem from '../component/BookList.js/SideBarItem';
 import CarouselItem from '../component/Carousel/CarouselItem';
 import Footer from '../container/Footer';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { category } from '../utils/category';
 import { v4 as uuid } from 'uuid';
 import SidebarCheckbox from '../component/BookList.js/SidebarCheckbox';
 import Header from '../container/Header';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import BreadCrump from '../component/BreadCrump';
 import AdvanceSearchContainer from '../component/BookList.js/AdvanceSearchContainer';
 import SortingContainer from '../component/BookList.js/SortingContainer';
+import { fetchBookList } from '../store/action/bookListAction';
 
 const BookList = () => {
     const params=useParams()
-    const navigate=useNavigate()
     const [categoryPage,setCategoryPage]=useState('')
     const [categoryNameObj,setCatgegoryNameObj]=useState('')
-    const [filteredBooks,setFilteredBooks]=useState([])
-    const allBooks=useSelector((state)=>state.books.allBooks)
+    const booksArr=useSelector((state)=>state.books.bookList)
     const showAdvanceSearch=useSelector((state)=>state.ui.showAdvanceSearch)
     const showSorting=useSelector((state)=>state.ui.showSorting)
+    const dispatch=useDispatch()
    useEffect(()=>{
     if(categoryPage){
         document.title=categoryPage.title
@@ -36,22 +36,20 @@ const BookList = () => {
         if(params.subsetcategory){
             const subsetCategory=categoryName.subset.find((item)=>item.id ===params.subsetcategory)
             setCategoryPage(subsetCategory)
-            setFilteredBooks(allBooks.filter((item)=>item.subCategory===params.subsetcategory))
         }else{
             setCategoryPage(categoryName)
-            setFilteredBooks(allBooks.filter((item)=>item.category===params.categoryname))
         }
-        if (categoryPage===undefined) {
-            navigate('/notfound')
-        }
-   },[params.subsetcategory,params.categoryname,allBooks,categoryPage,navigate])
+        
+
+            dispatch(fetchBookList(params.categoryname,params.subsetcategory))
+   },[params.subsetcategory,params.categoryname,categoryPage,dispatch])
 
   
    
     
     
     const publisher=[]
-    filteredBooks.map((item)=>publisher.push(item.publisher))
+    booksArr.map((item)=>publisher.push(item.publisher))
     const publisherUnicArr=[...new Set(publisher)]
     return (
         <>
@@ -140,10 +138,10 @@ const BookList = () => {
                                     ، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری
                                     را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو
                             </PageDescription>
-                                    {filteredBooks.length>0 ?
+                                    {booksArr.length>0 ?
                                             
                             <BookListContainer>
-                            { filteredBooks.map((item)=>{
+                            { booksArr.map((item)=>{
                                                     
                                 return   <CarouselItem key={item.id} id={item.id} title={item.bookName} imgUrl={`/images/bookImages/books/${item.imgUrl}`} auther={item.auther}/>
                                                 })}

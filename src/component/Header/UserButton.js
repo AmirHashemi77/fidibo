@@ -3,10 +3,13 @@ import { useDispatch, useSelector } from 'react-redux';
 import { uiSliceAction } from '../../store/slice/uiSlice';
 import { Link } from 'react-router-dom';
 import { authAction } from '../../store/slice/authSlice';
+import { basketAction } from '../../store/slice/basketSlice';
+import { libraryAction } from '../../store/slice/librarySlice';
 
 const UserButton = () => {
     const auted=useSelector((state)=>state.auth.authed)
     const dispatch=useDispatch()
+    const activeUser=useSelector((state)=>state.auth.activeUser)
     const [showUserMenu,setShowUserMenu]=useState(false)
     const userHandler=()=>{
         if(!auted){
@@ -19,13 +22,15 @@ const UserButton = () => {
     const exitHandler=()=>{
         dispatch(authAction.logOutHandler())
         setShowUserMenu((prev)=>!prev)
+        dispatch(basketAction.clearBasketHandler())
+        dispatch(libraryAction.clearLibrary())
+        
     }
-    const userName='Amir'
     return (
         <>
         <li className='text-xl rounded-lg text-gray-500  hover:bg-gray-300 p-3 cursor-pointer relative md:px-1 md:hover:bg-transparent md:py-0 md:hover:text-gray-800'>
             <button onClick={userHandler} className='flex items-center'>
-                <i className='fa fa-user-o'></i><span className='hidden text-xs mx-2 md:block'>{!auted ? 'ورود و ثبت نام' : userName}</span>
+                <i className='fa fa-user-o'></i><span className='hidden text-xs mx-2 md:block'>{!auted ? 'ورود و ثبت نام' : activeUser.userName}</span>
             </button>
         </li>
         {showUserMenu &&

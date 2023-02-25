@@ -12,12 +12,19 @@ import MyBooks from './component/LibraryPage/MyBooks/MyBooks';
 import RecycleBooks from './component/LibraryPage/RecycleBooks/RecycleBooks';
 import FavoriteBooks from './component/LibraryPage/FavoriteBooks/FavoriteBooks';
 import SampleBooks from './component/LibraryPage/SampleBooks/SampleBooks';
-import { fetchBooks } from './store/action/booksAction';
 import AppPage from './page/AppPage';
 import NotFound from './page/NotFound';
+import { fetchBasketData, postBasketData } from './store/action/basketHandlerAction';
+import { fetchLibraryData, postLibraryData } from './store/action/libraryHandlerAction';
 
 function App() {
   const showLogin= useSelector((state)=>state.ui.showLogin)
+  const cartData=useSelector((state)=>state.basket)
+  const basketChanged=useSelector((state)=>state.basket.changed)
+  const libraryChanged=useSelector((state)=>state.library.libraryChange)
+  const libraryData=useSelector((state)=>state.library)
+  const currentUser=useSelector((state)=>state.auth.activeUser)
+  const authed=useSelector((state)=>state.auth.authed)
   const dispatch=useDispatch()
   const { pathname } = useLocation();
   useEffect(() => {
@@ -25,10 +32,41 @@ function App() {
   }, [pathname]);
 
 
+ 
+
   useEffect(()=>{
-     dispatch(fetchBooks())
-  },[dispatch])
-  
+    if(authed && basketChanged){
+      const basketData={
+        basketItems:cartData.basketItems,
+        numberOfProduct:cartData.numberOfProduct,
+        totalPrice:cartData.totalPrice,
+      }
+      dispatch(postBasketData(basketData,currentUser.id))
+      
+    }
+  },[cartData,currentUser.id,dispatch,authed,basketChanged])
+
+  useEffect(()=>{
+    if(authed){
+      dispatch(fetchBasketData(currentUser.id))
+    }
+  },[currentUser.id,dispatch,authed])
+  useEffect(()=>{
+    if(authed && libraryChanged){
+      const library={
+        myBooks:libraryData.myBooks,
+        recycleBooks:libraryData.recycleBooks,
+        favoriteBooks:libraryData.favoriteBooks,
+        sampleBooks:libraryData.sampleBooks,
+      }
+      dispatch(postLibraryData(library,currentUser.id))
+    }
+  },[libraryData,dispatch,authed,currentUser.id,libraryChanged])
+  useEffect(()=>{
+    if(authed){
+      dispatch(fetchLibraryData(currentUser.id))
+    }
+  },[authed,dispatch,currentUser.id])
   return (
     <>
      <AccordionMenu />

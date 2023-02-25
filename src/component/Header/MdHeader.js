@@ -5,6 +5,7 @@ import BookDropDown from './BookDropDown';
 import MagazineDropDown from './MagazineDropDown';
 import PodcastDropDown from './PodcastDropDown';
 import UserButton from './UserButton';
+import SearchInput from './SearchInput';
 
 const MdHeader = () => {
     const [activeBookMenu,setActiveBookMenu]=useState(false)
@@ -15,11 +16,11 @@ const MdHeader = () => {
         <header className='hidden pt-2 px-5 bg-white shadow-lg  md:block'>
             <div className='max-w-6xl mx-auto relative'>
                 <div className='flex flex-col items-center'>
-                    <div className='flex justify-between items-center w-full'>
-                    <Link  to='/'><img src="/images/header-logo.svg" alt="" className='px-4 w-32'/></Link>
-                        <div className='flex flex-1'>
-                            <input type="text" placeholder='جستجو کتاب الکترونیکی و صوتی،پادکست و نویسنده ...' className='bg-gray-100 p-3 rounded-r-lg w-8/12 placeholder:text-sm focus:outline-none'/>
-                            <button className='bg-gray-100 text-gray-700 px-2 py-1 rounded-l-lg'><i className='fa fa-search'></i></button>
+                    <div className='flex  items-center w-full'>
+                        <div className='flex items-center flex-1 gap-5'>
+                            <Link  to='/'><img src="/images/fidibo-logo.png" alt="" className='px-4 w-32'/></Link>
+                               <SearchInput/>
+
                         </div>
                     
                         <ul className='flex items-center p-1'>

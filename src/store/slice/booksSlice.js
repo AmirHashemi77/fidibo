@@ -2,7 +2,10 @@ import { createSlice } from '@reduxjs/toolkit';
 
 
 const initialState={
-    allBooks:[],
+   
+    currentBook:{},
+    bookList:[],
+    searchList:[]
 }
 
 
@@ -10,9 +13,16 @@ const booksSlice=createSlice({
     name:'books',
     initialState,
     reducers:{
-        setAllBooks(state,action){
-            state.allBooks=action.payload
+        setCurrentBook(state,action){
+            state.currentBook=action.payload
         },
+        setBookList(state,action){
+            state.bookList=action.payload
+        },
+        setSearchList(state,action){
+            state.searchList=action.payload
+        }
+
     
     }
 })

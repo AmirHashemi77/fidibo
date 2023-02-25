@@ -10,7 +10,9 @@ const BasketItemList = () => {
     return (
         <div className='flex flex-col items-start'>
             
-            {basketItems.map((item)=>{
+            {
+                basketItems &&
+            basketItems.map((item)=>{
             return    <BasketItem key={item.id} id={item.id} bookName={item.bookName} auther={item.auther} price={item.price} imgUrl={item.imgUrl} bookId={item.id}/>
                 
             })}

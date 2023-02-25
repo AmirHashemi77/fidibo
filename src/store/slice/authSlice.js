@@ -2,7 +2,9 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState={
-    authed:false
+    authed:false,
+    activeUser:[],
+    popupErr:null
 }
 const authSlice=createSlice({
     name:'auth',
@@ -10,9 +12,16 @@ const authSlice=createSlice({
     reducers:{
         logOutHandler(state){
             state.authed=false
+            state.activeUser=[]
         },
         logInHandler(state){
             state.authed=true
+        },
+        setActiveUser(state,action){
+            state.activeUser=action.payload
+        },
+        setPopUpErr(state,action){
+            state.popupErr=action.payload
         }
     }
 })

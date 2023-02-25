@@ -5,14 +5,10 @@
 
 @font-face {
     font-family: iranYekan;
-    src: url("../public/fonts/IRANYekanMediumMsn.ttf") format("truetype");  
-    font-weight: 500;
-  }
-/* @font-face {
-    font-family: iranYekan;
     src: url("../public/fonts/IRANYekanRegularMsn.ttf") format("truetype");  
-    font-weight: 400;
-  } */
+    font-weight: normal;
+  }
+
   @layer base {
     html {
       font-family: iranYekan, system-ui;
@@ -53,9 +49,7 @@
    height: auto !important;
    
   }
-  .swiper{
-    @apply !overflow-visible !overflow-x-hidden
-  }
+  
   
   
   
