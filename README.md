@@ -1,6 +1,6 @@
 # Clone Of Fedio
 ## Fidibo is an online book store
-### [Clone Of Fidibo Link](https://fidibo.netlify.app/)
+### [Clone Of Fidibo Link](https://http://fidibo.amirhashemi776.ir/)
 
 ---
 
@@ -30,8 +30,7 @@
  
  ![Login](https://s2.uupload.ir/files/login_xv7g.jpg)
  
->Because there is no backend, there is no need to sign in, and in the  'Login'  section, you can enter only by pressing login.
-
+>json-server is used for login system and shopping cart and books information.
 
 
 
@@ -40,6 +39,15 @@
   You can see a list of different books based on the type of writing, genre and different topics
 
 ![BookList](https://s2.uupload.ir/files/booklist1_ydr.jpg)
+
+
+
+
+## Search
+
+
+
+  You can find books based on the name in the search field
 
 
 

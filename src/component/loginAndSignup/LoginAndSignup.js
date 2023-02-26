@@ -76,7 +76,7 @@ const LoginAndSignup = () => {
                     </div>
                     <form className='w-full flex flex-col border-b-2 border-b-gray-200 py-3'>
                         <input ref={userName} type="text"  className='bg-gray-200 p-2 my-2 rounded-md ltr placeholder:text-xs focus:outline-none' placeholder='نام کاربری'/>
-                        <input ref={password} type="text"  className='bg-gray-200 p-2 my-2 rounded-md ltr placeholder:text-xs focus:outline-none' placeholder='رمز عبور'/>
+                        <input ref={password} type="password"  className='bg-gray-200 p-2 my-2 rounded-md ltr placeholder:text-xs focus:outline-none' placeholder='رمز عبور'/>
                         <button onClick={userHandler} className='bg-lightBlue text-white text-sm p-3 rounded-lg my-2'>{type==='login' ? 'ورود' : 'ثبت نام'}</button>
                         {popupErr && 
                                 
