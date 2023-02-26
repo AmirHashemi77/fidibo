@@ -1,6 +1,6 @@
 # Clone Of Fedio
 ## Fidibo is an online book store
-### [Clone Of Fidibo Link](https://http://fidibo.amirhashemi776.ir/)
+### [Clone Of Fidibo Link](https://fidibo.amirhashemi776.ir/)
 
 ---
 
